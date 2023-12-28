@@ -77,7 +77,7 @@ h1{
 .presentation h1 span{
     
     display: table-cell;
-    animation: animate 3s linear infinite;
+    animation: animate 2s linear infinite;
 }
 
 
