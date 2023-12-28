@@ -20,12 +20,34 @@ body{
 h1{
     font-size: 100px;
     color: #111;
-    height: 100px;
+    
 }
 
-h1 span{
+.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    margin: 1rem;
+}
+.presentation h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem;
+}
+
+.srl{
+    background: #f39810;
+    height: 120px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation h1 span{
+    
     display: table-cell;
-    animation: animate 2s linear infinite;
+    animation: animate 3s linear infinite;
 }
 
 
@@ -54,10 +76,10 @@ h1 span:nth-child(5){
         0 0 40px #f39810,
         0 0 80px #f39810,
         0 0 120px #f39810;
-        transform: translateY(-30px);
+        transform: translateY(-10px);
         /* 00b3ff */
     }
-    5%,95%{
+    15%,85%{
         color: #111;
         filter: blur(0px);
         text-shadow:none;
@@ -265,6 +287,44 @@ h1 span:nth-child(5){
 }
 
 
+@media (max-width:570px){
+    
+    .presentation h1{
+        font-size: 65px;
+    }
+    .presentation{
+        width: 100%;    
+    }
+    .srl{
+        height: 80px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width:400px){
+    
+    .product p{
+        font-size: 12px;
+    }
+    .product span{
+        
+        font-size: 20px;
+       
+    }
+
+    .presentation h1{
+        font-size: 50px;
+    }
+
+    .srl{
+        height: 60px;
+        margin-top: 0;
+    }
+    
+}
+
+
+
 @media (max-width:360px){
     h1{
         font-size: 85px;
@@ -279,17 +339,5 @@ h1 span:nth-child(5){
     
 }
 
-@media (max-width:400px){
-    
-    .product p{
-        font-size: 12px;
-    }
-    .product span{
-        
-        font-size: 20px;
-       
-    }
-    
-}
 
 
