@@ -181,9 +181,16 @@ h1 span:nth-child(5){
 
 .menu-section .line{
     
-    width: 100%;
+    width: 95%;
+    margin: 0 .7rem;
     height: 2px;
     background: #f39810;
+    box-shadow: 0 0 10px #f39810,
+        0 0 20px #f39810,
+        0 0 40px #f39810,
+        0 0 80px #f39810,
+        0 0 120px #f39810;
+    border-radius: 20px;
 }
 
 
@@ -325,6 +332,14 @@ h1 span:nth-child(5){
     .srl{
         height: 60px;
         margin-top: 0;
+    }
+
+    .line-menu h1{
+        position: relative;
+        font-size: 40px;
+        color: #f39810;    
+        height: 60px;
+        padding-bottom: 1rem;
     }
 
     
