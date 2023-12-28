@@ -22,6 +22,16 @@ h1{
     color: #111;
     
 }
+.presentation-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; 
+    margin: 1rem;
+    height: fit-content;
+    
+}
 
 .presentation{
     display: flex;
@@ -30,9 +40,28 @@ h1{
     width: 100%; 
     margin: 1rem;
 }
-.presentation h1{
+.presentation-section h1{
     font-family: Arial, Helvetica, sans-serif;
     margin: 1rem;
+    
+}
+
+.presentation-section .logo{
+    border-radius: 20px;
+    border: 12px solid #f39810;
+    width: 230px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.presentation-section .logo h1{
+    
+    font-size: 280px !important;
+    font-weight: bold;
+    color: #fff;
 }
 
 .srl{
@@ -42,6 +71,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 8px;
 }
 
 .presentation h1 span{
@@ -299,6 +329,20 @@ h1 span:nth-child(5){
         height: 80px;
         margin-top: 0;
     }
+
+    .presentation-section .logo{
+        
+        width: 180px;
+        height: 180px;
+        
+        
+    }
+    
+    .presentation-section .logo h1{
+        
+        font-size: 200px !important;
+        
+    }
 }
 
 @media (max-width:400px){
@@ -319,6 +363,20 @@ h1 span:nth-child(5){
     .srl{
         height: 60px;
         margin-top: 0;
+    }
+
+    .presentation-section .logo{
+        
+        width: 130px;
+        height: 130px;
+        
+        
+    }
+    
+    .presentation-section .logo h1{
+        
+        font-size: 140px !important;
+        
     }
     
 }
